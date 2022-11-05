@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+   <!-- <title> Responsive Contact Us Form  | CodingLab </title>-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+    <div class='container'>
+        <div class='window'>
+          <div class='order-info'>
+            <div class='order-info-content'>
+              <h2>Order Summary</h2>
+                      <div class='line'></div>
+              <table class='order-table'>
+                <tbody>
+                  <tr>
+                    <td><img src='img/Product D.png' class='full-width'></img>
+                    </td>
+                    <td>
+                      <br> <span class='thin'>Apollo Running Short</span>
+                      <br> Free Run 3.0 Women<br> <span class='thin small'> Color: Grey, Size: M<br><br></span>
+                    </td>
+      
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class='price'>$50.00</div>
+                    </td>
+                  </tr>
+                </tbody>
+      
+              </table>
+             
+              <div class='total'>
+                <span style='float:left;'>
+                  <div class='thin dense'>VAT 19%</div>
+                  <div class='thin dense'>Delivery</div>
+                  TOTAL
+                </span>
+                <span style='float:right; text-align:right;'>
+                  <div class='thin dense'>10.75</div>
+                  <div class='thin dense'>$4.95</div>
+                  $64.95
+                </span>
+              </div>
+      </div>
+      </div>
+              <div class='credit-info'>
+                <div class='credit-info-content'>
+                  <table class='half-input-table'>
+                    
+                      </div>
+                     </td></tr>
+                  </table>
+                  <h1>Payment Gateway</h1>
+                 <form id="paymentForm">
+                  <div class="form-group"> 
+                    <label for="email">Email Address: </label>
+                    <input id="email-address" type="email" class='input-field' required></input>
+                  </div>
+                 <div class="form-group">
+                  <label for="amount"> Amount:</label>
+                  <input type="tel" class='input-field' id="amount" required></input>
+                 </div>
+                 
+                 
+                  <table class='half-input-table'>
+                    <tr>
+                      <div class="form-group">
+                        <td> <label for="first-name">First Name</label>
+                          <input type="text" class='input-field' id="first-name" required></input>
+                        </td>
+                      </div>
+                      <div class="form-group">
+                        <td> <label for="last-name">Last Name</label>
+                          <input type="text" class='input-field' id="last-name" required></input>
+                        </td>
+                      </div>
+                    </tr>
+                  </table>
+                  <div class="form-submit">
+                    <button class="pay-btn" type="submit" onclick="payWithPaystack()">Pay</button>
+                  </div>
+                  
+                 </form>
+      
+                </div>
+      
+              </div>
+            </div>
+      </div>
+      <script src="function.js"></script>
+     
+</body>
+</html>
